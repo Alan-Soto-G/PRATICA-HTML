@@ -7,6 +7,24 @@ a:hover{
     text-decoration: underline;
 }
 
+.row{
+    position: relative;
+}
+
+#a-banner{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100%;
+}
+
+.logoPrin{
+    clip-path: inset(37px 248px 36px 35px);    
+    position: relative;
+    top: -20px;  
+    left: 100px; 
+
+}
+
 #lupa{
     width: 20px;
     height: 20px;
@@ -18,37 +36,48 @@ a:hover{
 }
 
 #flecha{
-    width: 15px;
-    height: 15px;
-}
-
-p{
-    color: rgb(0, 0, 0);
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 110%;
+    margin-top: 1px;
+    width: 15%;
+    height: 30%;
 }
 
 video {
-    position: fixed;
-    top: 58px;
+    position: absolute;
+    top: 7.4%;
     left: 0;
     width: 100%;
     height: 65%;
     object-fit: cover;
+    z-index: -1;
 }
 
 .overlay {
-    position: fixed;
-    top: 58;
+    position: absolute;
+    top: 7.4%;
     left: 0;
     width: 100%;
     height: 65%;
     background: rgba(0, 0, 0, 0.5); 
+    z-index: -1;
 }
 
-.contenido {
+#logo {
+    max-width:60%; 
+    height: auto;
+}
+
+.opciones-container {
+    display: flex;
+    position: relative;
+    gap: 34px;
+    left: -6%;
+    margin-right: auto; 
+}
+
+#opciones {
     position: relative;
     color: white;
-    text-align: center;
-    padding-top: 20%;
+    font-weight: bold;
+    font-size: 100%;
+    top: 24%;
 }
